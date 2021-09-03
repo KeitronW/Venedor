@@ -1,0 +1,27 @@
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+.header {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.top-header {
+    background-color: rgb(236, 236, 236);
+    border-top: 5px solid #46b6c4;
+}
+.main-sub-header {
+    border: 1px solid green;
+}
