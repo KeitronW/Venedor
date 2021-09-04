@@ -15,6 +15,19 @@ Single-colored icons can be modified like so:
     color: red;
 }
   ========================================== */
+
+/* GENERAL RULES */
+:root {
+    --prim: #444b4c;
+    --sec:  rgb(236, 236, 236);
+    --tert: #14bfcc;
+    --subtitleFont: 'Open Sans', sans-serif;
+    --navbarFont: 'IBM Plex Sans Arabic', sans-serif;
+    --subtitleFont: 'Roboto Condensed', sans-serif;
+}
+
+/* CLOSE GENERAL RULES */
+
 .header {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -22,6 +35,85 @@ Single-colored icons can be modified like so:
     background-color: rgb(236, 236, 236);
     border-top: 5px solid #46b6c4;
 }
-.main-sub-header {
-    border: 1px solid green;
+.top-nav, .top-nav-login {
+    padding-top: 5px;
 }
+.main-sub-header {
+    /* border: 1px solid green; */
+    padding-top: 20px;
+}
+.main-nav-bar-item {
+    text-transform: uppercase;
+    font-family: var(--navbarFont);
+    font-size: 20px;
+    font-weight: bolder;
+}
+/* HEADER */
+/* CLOSE HEADER */
+
+/* MAIN */
+.carousel-content {
+    background-color: var(--sec);
+}
+.subtitle {
+    border-left: 4px solid var(--tert);
+    padding-left: 5px;
+    text-transform: capitalize;
+    font-family: var(--subtitleFont);
+    font-size: 35px;
+    font-weight: bolder;
+}
+/* CLOSE MAIN */
+
+/* FOOTER */
+.sign-up-section {
+    background-color: var(--sec);
+    height: 90px;
+}
+.random-text {
+    color: var(--prim);
+    padding-top: 15px;
+}
+.sign-up-box {
+    padding-top: 25px;
+}
+.listed-info-item {
+    list-style-type: square;
+}
+.listed-info-link {
+    color: var(--sec);
+}
+
+.bottom-section {
+    background-color: var(--prim);
+    border-bottom: 1px solid rgb(90, 90, 90);
+}
+.bottom-section .sub-header {
+    text-transform: uppercase;
+    color: var(--sec);
+}
+.footer-social-item {
+    border: 1px solid salmon;
+    border-radius: 3px;
+}
+.footer-nav-link {
+    color: white;
+}
+.footer-nav-link:hover, .listed-info-link:hover {
+    transition: 1.5s ease;
+    color: var(--tert);
+}
+#footer-icon {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    padding: 6px;
+}
+.colophon-section {
+    background-color: var(--prim);
+    border-top: 1px solid rgb(46, 46, 46);
+}
+/* CLOSE FOOTER */
