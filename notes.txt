@@ -244,3 +244,19 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+
+
+i want to make my lists nested. this next bit of code will be for the html. maybe i can make my lists work the way i need them to
+
+<p>Here's a list</p>
+<div id="top">
+    <ol id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <a href="#top" class="hide">[hide]</a>
+    <a href="#list" class="show">[show]</a>
+</div>
+<p>How about that?</p>

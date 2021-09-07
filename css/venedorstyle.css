@@ -45,7 +45,28 @@ Single-colored icons can be modified like so:
 }
 .top-nav, .top-nav-login {
     padding-top: 5px;
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
 }
+@media (max-width: 760px) {
+    .header-nav-text {
+        display: none;
+    }
+    .header-nav-item {
+        border-right: 1px solid salmon;
+        padding-right: 50px;
+    }
+    .header-nav-item:last-child {
+        border-right: none;
+    }
+}
+
+/* .home-list {
+    display: none;
+}
+.home-list:target {
+    display: block;
+} */
+
 .funky-buttons {
     padding-top: 20px;
 }
@@ -57,7 +78,7 @@ Single-colored icons can be modified like so:
 .main-nav-bar-item {
     text-transform: uppercase;
     font-family: var(--navbarFont);
-    font-size: 20px;
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
     font-weight: bolder;
 }
 .main-nav-bar-item:hover {
@@ -86,6 +107,17 @@ Single-colored icons can be modified like so:
     padding-top: 50px;
     padding-bottom: 50px;
 }
+@media (max-width: 576px) {
+    .banner-content-img, .brand-content-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.icon-star-full, .icon-star-empty, .icon-star-half {
+    color: goldenrod;
+}
 .card-button {
     background-color: var(--prim);
     border-radius: 3px;
@@ -96,6 +128,7 @@ Single-colored icons can be modified like so:
 }
 .card-button:hover {
     background-color: var(--tert);
+    border-color: salmon;
 }
 .card-button-link:hover {
     text-decoration: none;
@@ -110,21 +143,24 @@ Single-colored icons can be modified like so:
 /* FOOTER */
 .sign-up-section {
     background-color: var(--sec);
-    height: 90px;
 }
 .random-text {
     color: var(--prim);
     padding-top: 10px;
     font-family: var(--subtitleFont);
     /* font-size: 35px; */
-    font-size: calc(12px + 12 * ((100vw - 320px) / 680));
+    font-size: calc(12px + 10 * ((100vw - 320px) / 680));
     text-transform: uppercase;
 }
 .sign-up-box {
     padding-top: 25px;
 }
+.form-control {
+    border: 4px solid yellow;
+}
 .listed-info-item {
     list-style-type: square;
+    color: var(--tert);
 }
 .listed-info-link {
     color: var(--sec);
@@ -138,6 +174,12 @@ Single-colored icons can be modified like so:
     text-transform: uppercase;
     color: var(--sec);
 }
+.sub-header {
+    font-size: calc(12px + 10 * ((100vw - 320px) / 680));
+}
+.my-account-details {
+    color: var(--sec);
+}
 
 .footer-social-item {
     /* border: 1px solid salmon; */
@@ -149,7 +191,7 @@ Single-colored icons can be modified like so:
 }
 .footer-nav-link:hover, .listed-info-link:hover {
     transition: 1.5s ease;
-    color: var(--tert);
+    color: salmon;
 }
 #footer-icon {
     display: inline-block;
@@ -160,6 +202,7 @@ Single-colored icons can be modified like so:
     fill: currentColor;
     padding: 6px;
 }
+
 .colophon-section {
     background-color: var(--prim);
     border-top: 1px solid rgb(46, 46, 46);
