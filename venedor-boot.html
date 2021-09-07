@@ -17,7 +17,7 @@
     <header class="header" id="header">
         <section class="container-fluid top-header">
             <div class="row justify-content-center">
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <nav class="top-nav">
                         <ul class="nav header-nav-bar justify-content-around">
                             <li class="nav-item header-nav-item"><a class="top-nav-link" href="#link"><svg class="icon icon-edit img-fluid"><use xlink:href="#icon-edit"></use></svg>my wishlist</a></li>
@@ -40,7 +40,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="dropdown">
+                            <div class="dropdown funky-buttons">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">US Dollar
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="dropdown">
+                            <div class="dropdown funky-buttons">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="dropdown">
+                            <div class="dropdown funky-buttons">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cart
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -77,7 +77,8 @@
                 </div>
             </div>
         </section>
-        <section class="container main-sub-header">
+        <!-- no idea why 'sticky top' won't work with this browser... -->
+        <section class="container main-sub-header sticky-top">
             <div class="row">
                 <div class="col-md-8">
                     <nav class="main-nav-bar">
@@ -146,16 +147,50 @@
         </div>
         <section class="container manufacturer-content">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-5">
                     <h2 class="subtitle">latest</h2>
                     <p class="sales-text">Only with us you can get a new model with a discount.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3"><img src="media/item1-hover.jpg" alt=""></div>
-                <div class="col-md-3"><img src="media/item2-hover.jpg" alt=""></div>
+            <div class="row justify-content-around">
+                <!-- border-0 will remove any border in bootstrap when using cards. crazy -->
+                <!-- create multiple divs for the stars?? what did lorraine do? -->
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item1-hover.jpg" class="card-img-top" alt="...">
+                    <!-- do i change the h5 into img tags?? -->
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item2-hover.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item3-hover.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item5-hover.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3"><img src="media/item2-hover.jpg" alt=""></div>
                 <div class="col-md-3"><img src="media/item3-hover.jpg" alt=""></div>
-                <div class="col-md-3"><img src="media/item5-hover.jpg" alt=""></div>
+                <div class="col-md-3"><img src="media/item5-hover.jpg" alt=""></div> -->
             </div>
         </section>
         <section class="container welcome-banner">
@@ -178,17 +213,45 @@
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-md-3 on-sale-products"><img src="media/item3-hover.jpg" alt=""></div>
-                <div class="col-md-3 on-sale-products"><img src="media/item5-hover.jpg" alt=""></div>
-                <div class="col-md-3 on-sale-products"><img src="media/item7-hover.jpg" alt=""></div>
-                <div class="col-md-3 on-sale-products"><img src="media/item8-hover.jpg" alt=""></div>
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item3-hover.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item5-hover.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item7-hover.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
+                <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <img src="media/item8-hover.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">change these to stars</h5>
+                      <p class="card-text">phasellus consequat</p>
+                      <button class="card-button"><a href="#" class="card-button-link">add to cart</a></button>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="subtitle">manufacturers</h2>
                 </div>
             </div>
-            <div class="row justify-content-around">
+            <div class="row justify-content-around brand-banner">
                 <div class="col-md-2"><img src="media/brand-logo.png" alt="brand logo"></div>
                 <div class="col-md-2"><img src="media/brand-logo.png" alt="brand logo"></div>
                 <div class="col-md-2"><img src="media/brand-logo.png" alt="brand logo"></div>
@@ -200,11 +263,11 @@
     </main>
     <footer class="footer" id="footer">
         <section class="container-fluid footer-content">
-            <div class="row sign-up-section">
+            <div class="row sign-up-section justify-content-center">
                 <div class="col-md-6 random-text">
                     <p class="random-text">sign up to receive the latest fashion news</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <div class="input-group mb-3 sign-up-box">
                         <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="basic-addon2">
                         <div class="input-group-append">
@@ -253,8 +316,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row colophon-section">
-                <div class="col-md-5">
+            <div class="row colophon-section justify-content-center justify-content-around">
+                <div class="col-md-3">
                     <!-- i want to make these icons have a border around them and add some animation to them -->
                     <!-- don't forget to give the icon's a unique id for easy styling -->
                     <nav class="bottom-nav">
@@ -271,7 +334,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-3">
                     <div class="colophon">
                         <p> &copy; powered by company all rights reserved</p>
                     </div>

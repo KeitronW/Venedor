@@ -28,6 +28,7 @@ Single-colored icons can be modified like so:
 
 /* CLOSE GENERAL RULES */
 
+/* HEADER */
 .header {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -35,20 +36,34 @@ Single-colored icons can be modified like so:
     background-color: rgb(236, 236, 236);
     border-top: 5px solid #46b6c4;
 }
+.top-nav-link {
+    color: var(--prim);
+}
+.top-nav-link:hover {
+    color: var(--tert);
+    transition: 1.5s ease;
+}
 .top-nav, .top-nav-login {
     padding-top: 5px;
+}
+.funky-buttons {
+    padding-top: 20px;
 }
 .main-sub-header {
     /* border: 1px solid green; */
     padding-top: 20px;
 }
+
 .main-nav-bar-item {
     text-transform: uppercase;
     font-family: var(--navbarFont);
     font-size: 20px;
     font-weight: bolder;
 }
-/* HEADER */
+.main-nav-bar-item:hover {
+    color: var(--tert);
+    transition: 1s ease;
+}
 /* CLOSE HEADER */
 
 /* MAIN */
@@ -63,6 +78,33 @@ Single-colored icons can be modified like so:
     font-size: 35px;
     font-weight: bolder;
 }
+.welcome-banner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.banner-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.card-button {
+    background-color: var(--prim);
+    border-radius: 3px;
+}
+.card-button-link {
+    color: var(--sec);
+    text-transform: uppercase;
+}
+.card-button:hover {
+    background-color: var(--tert);
+}
+.card-button-link:hover {
+    text-decoration: none;
+    color: var(--sec);
+}
+.brand-banner {
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
 /* CLOSE MAIN */
 
 /* FOOTER */
@@ -72,7 +114,11 @@ Single-colored icons can be modified like so:
 }
 .random-text {
     color: var(--prim);
-    padding-top: 15px;
+    padding-top: 10px;
+    font-family: var(--subtitleFont);
+    /* font-size: 35px; */
+    font-size: calc(12px + 12 * ((100vw - 320px) / 680));
+    text-transform: uppercase;
 }
 .sign-up-box {
     padding-top: 25px;
@@ -92,8 +138,10 @@ Single-colored icons can be modified like so:
     text-transform: uppercase;
     color: var(--sec);
 }
+
 .footer-social-item {
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
+    background-color: rgb(97, 97, 97);
     border-radius: 3px;
 }
 .footer-nav-link {
