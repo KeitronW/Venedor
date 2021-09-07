@@ -20,8 +20,8 @@
                 <div class="col-md-6">
                     <nav class="top-nav">
                         <ul class="nav header-nav-bar justify-content-around">
-                            <!-- usin d-none d-sm-block will let me skip using @media queries but there's a problem... -->
-                            <li class="nav-item header-nav-item"><a class="top-nav-link" href="#link"><svg class="icon icon-edit img-fluid"><use xlink:href="#icon-edit"></use></svg ><span class="header-nav-text">my wishlist</span></a></li>
+                            <!-- usin d-none d-sm-block will let me skip using @media queries but there's a problem... INLINE AND BLOCK DO NOT MEAN THE SAME THING DUMMY-->
+                            <li class="nav-item header-nav-item"><a class="top-nav-link" href="#link"><svg class="icon icon-edit img-fluid"><use xlink:href="#icon-edit"></use></svg ><span class="header-nav-text d-sm-none d-md-inline">my wishlist</span></a></li>
                             <li class="nav-item header-nav-item"><a class="top-nav-link" href="#link"><svg class="icon icon-user img-fluid"><use xlink:href="#icon-user"></use></svg><span class="header-nav-text">my account</span></a></li>
                             <li class="nav-item header-nav-item"><a class="top-nav-link" href="#link"><svg class="icon icon-shopping-cart"><use xlink:href="#icon-shopping-cart"></use></svg><span class="header-nav-text">my cart</span></a></li>
                             <li class="nav-item header-nav-item"><a class="top-nav-link" href="#link"><svg class="icon icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg><span class="header-nav-text">checkout</span></a></li>
