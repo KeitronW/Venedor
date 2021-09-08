@@ -83,13 +83,64 @@
             <div class="row">
                 <div class="col-md-8">
                     <nav class="main-nav-bar">
-                        <!-- i want to nest lists within lists without having them display when i am not hovering over the item. how can i make that happen??? -->
+                        <!-- 9/7 i want to nest lists within lists without having them display when i am not hovering over the item. how can i make that happen??? -->
+                        <!-- 9/8 well i got the list to sort of work. i will take the small victory for now. i just need to figure out why the new pop out menu pushes the rest of the content downward. whatever -->
                         <ul class="nav justify-content-around main-nav-list">
-                            <li class="main-nav-bar-item">home</li>
-                            <li class="main-nav-bar-item">shop</li>
-                            <li class="main-nav-bar-item">pages</li>
-                            <li class="main-nav-bar-item">portfolio</li>
-                            <li class="main-nav-bar-item">elements</li>
+                            <li class="main-nav-bar-item" id="home">home
+                                <ul class="show-home-list">
+                                    <li class="home-list-item">home1</li>
+                                    <li class="home-list-item">home2</li>
+                                    <li class="home-list-item">home3</li>
+                                    <li class="home-list-item">home4</li>
+                                    <li class="home-list-item">home5</li>
+                                    <li class="home-list-item">home6</li>
+                                    <li class="home-list-item">home7</li>
+                                    <li class="home-list-item">home8</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="shop">shop
+                                <ul class="show-shop-list">
+                                    <li class="shop-list-item">blah1</li>
+                                    <li class="shop-list-item">blah2</li>
+                                    <li class="shop-list-item">blah3</li>
+                                    <li class="shop-list-item">blah4</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="pages">pages
+                                <ul class="show-pages-list">
+                                    <li class="page-list-item">headers</li>
+                                    <li class="page-list-item">footers</li>
+                                    <li class="page-list-item">products</li>
+                                    <li class="page-list-item">cart</li>
+                                    <li class="page-list-item">category</li>
+                                    <li class="page-list-item">blog</li>
+                                    <li class="page-list-item">checkout</li>
+                                    <li class="page-list-item">about us</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="portfolio">portfolio
+                                <ul class="show-portfolio-list">
+                                    <li class="portfolio-list-item">classic</li>
+                                    <li class="portfolio-list-item">masonry</li>
+                                    <li class="portfolio-list-item">portfolio posts</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="elements">elements
+                                <ul class="show-elements-list">
+                                    <li class="elements-list-item">tabs</li>
+                                    <li class="elements-list-item">titles</li>
+                                    <li class="elements-list-item">typography</li>
+                                    <li class="elements-list-item">collapses</li>
+                                    <li class="elements-list-item">animations</li>
+                                    <li class="elements-list-item">grid system</li>
+                                    <li class="elements-list-item">alert boxes</li>
+                                    <li class="elements-list-item">buttons</li>
+                                    <li class="elements-list-item">media</li>
+                                    <li class="elements-list-item">forms</li>
+                                    <li class="elements-list-item">icons</li>
+                                    <li class="elements-list-item">lists</li>
+                                </ul>
+                            </li>
                             <li class="main-nav-bar-item">contact us</li>
                         </ul>
                     </nav>
@@ -318,7 +369,7 @@
                 </div>
             </div>
             <div class="row bottom-section justify-content-center">
-                <div class="col-md-3">
+                <div class="col-md-3 flex-sm-column d-flex justify-content-center">
                     <div class="footer-list" id="list1">
                         <h3 class="sub-header" id="my-account">my account</h3>
                         <ul class="listed-info">
@@ -331,7 +382,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 flex-sm-column d-flex justify-content-center">
                     <div class="footer-list" id="list2">
                         <h3 class="sub-header" id="my-account">information</h3>
                         <ul class="listed-info">
@@ -350,7 +401,7 @@
                         <p class="my-account-details">It's none of your business</p>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 flex-sm-column d-flex justify-content-center">
                     <div class="footer-list" id="list4">
                         <h3 class="sub-header" id="nonsense">mood</h3>
                         <!-- maybe find just a random image or something -->

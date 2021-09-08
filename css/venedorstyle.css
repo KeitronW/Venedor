@@ -61,15 +61,14 @@ Single-colored icons can be modified like so:
     }
 }
 
-/* .home-list {
-    display: none;
-}
-.home-list:target {
-    display: block;
-} */
 
 .funky-buttons {
     padding-top: 20px;
+}
+@media (max-width: 576px) {
+    .funky-buttons .btn {  /*i can't believe that freaking worked*/
+        width: 100%;
+    }
 }
 .main-sub-header {
     /* border: 1px solid green; */
@@ -86,6 +85,29 @@ Single-colored icons can be modified like so:
     color: var(--tert);
     transition: 1s ease;
 }
+
+/* list experiment field*/
+
+#home:hover .show-home-list, #shop:hover .show-shop-list, #pages:hover .show-pages-list, #portfolio:hover .show-portfolio-list, #elements:hover .show-elements-list {
+    max-height: inherit;
+    opacity: 1;
+  }
+  .show-home-list, .show-shop-list, .show-pages-list, .show-portfolio-list, .show-elements-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 300ms ease;
+  }
+@media (max-width: 576px) {
+    #home:hover .show-home-list, #shop:hover .show-shop-list, #pages:hover .show-pages-list, #portfolio:hover .show-portfolio-list, #elements:hover .show-elements-list {
+        display: none;
+    }
+}
+
+
 /* CLOSE HEADER */
 
 /* MAIN */
@@ -181,7 +203,15 @@ Single-colored icons can be modified like so:
 .my-account-details {
     color: var(--sec);
 }
+@media(max-width: 576px) {
+    #list3 {
+        display: none;
+    }
+}
 
+.footer-social-list {
+    padding-top: 15px;
+}
 .footer-social-item {
     /* border: 1px solid salmon; */
     background-color: rgb(97, 97, 97);
@@ -208,5 +238,15 @@ Single-colored icons can be modified like so:
     background-color: var(--prim);
     border-top: 1px solid rgb(46, 46, 46);
 }
+.colophon {
+    color: var(--sec);
+}
 
 /* CLOSE FOOTER */
+
+
+
+
+
+
+

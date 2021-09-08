@@ -248,15 +248,30 @@ Single-colored icons can be modified like so:
 
 
 i want to make my lists nested. this next bit of code will be for the html. maybe i can make my lists work the way i need them to
+i think i found the code that will work. i will chenge some things around to make sure 
 
-<p>Here's a list</p>
-<div id="top">
-    <ol id="list">
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ol>
-    <a href="#top" class="hide">[hide]</a>
-    <a href="#list" class="show">[show]</a>
+.show:hover ul.list-categories{
+  max-height: inherit;
+  opacity: 1;
+}
+
+.list-categories{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 300ms ease;
+}
+
+<div class="show">show div
+<ul class="list-categories">
+  <li>Bed</li>
+  <li>Bed</li>
+  <li>Bed</li>
+  <li>Bed</li>
+  <li>Bed</li>
+  <li>Bed</li>
+</ul> 
 </div>
-<p>How about that?</p>
