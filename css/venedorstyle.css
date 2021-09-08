@@ -138,6 +138,34 @@ Single-colored icons can be modified like so:
     }
 }
 
+.shopping-card {
+    position: relative;
+}
+.sales-tag {
+    border: 1px solid var(--tert);
+    width: 60px;
+    padding-left: 13px;
+    color: white;
+    background-color: var(--tert);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    text-transform: uppercase;
+}
+.pricing-bubble {
+    border: 1px solid var(--tert);
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    left: 150px;
+    top: 160px;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: white;
+    background-color: var(--tert);
+}
+
 .icon-star-full, .icon-star-empty, .icon-star-half {
     color: goldenrod;
 }
