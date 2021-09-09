@@ -275,3 +275,89 @@ i think i found the code that will work. i will chenge some things around to mak
   <li>Bed</li>
 </ul> 
 </div>
+
+
+ths is the html code for my crappy hover lists 
+
+<!-- <ul class="nav justify-content-around main-nav-list">
+                            <li class="main-nav-bar-item" id="home">home
+                                <ul class="show-home-list">
+                                    <li class="home-list-item">home1</li>
+                                    <li class="home-list-item">home2</li>
+                                    <li class="home-list-item">home3</li>
+                                    <li class="home-list-item">home4</li>
+                                    <li class="home-list-item">home5</li>
+                                    <li class="home-list-item">home6</li>
+                                    <li class="home-list-item">home7</li>
+                                    <li class="home-list-item">home8</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="shop">shop
+                                <ul class="show-shop-list">
+                                    <li class="shop-list-item">blah1</li>
+                                    <li class="shop-list-item">blah2</li>
+                                    <li class="shop-list-item">blah3</li>
+                                    <li class="shop-list-item">blah4</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="pages">pages
+                                <ul class="show-pages-list">
+                                    <li class="page-list-item">headers</li>
+                                    <li class="page-list-item">footers</li>
+                                    <li class="page-list-item">products</li>
+                                    <li class="page-list-item">cart</li>
+                                    <li class="page-list-item">category</li>
+                                    <li class="page-list-item">blog</li>
+                                    <li class="page-list-item">checkout</li>
+                                    <li class="page-list-item">about us</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="portfolio">portfolio
+                                <ul class="show-portfolio-list">
+                                    <li class="portfolio-list-item">classic</li>
+                                    <li class="portfolio-list-item">masonry</li>
+                                    <li class="portfolio-list-item">portfolio posts</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item" id="elements">elements
+                                <ul class="show-elements-list">
+                                    <li class="elements-list-item">tabs</li>
+                                    <li class="elements-list-item">titles</li>
+                                    <li class="elements-list-item">typography</li>
+                                    <li class="elements-list-item">collapses</li>
+                                    <li class="elements-list-item">animations</li>
+                                    <li class="elements-list-item">grid system</li>
+                                    <li class="elements-list-item">alert boxes</li>
+                                    <li class="elements-list-item">buttons</li>
+                                    <li class="elements-list-item">media</li>
+                                    <li class="elements-list-item">forms</li>
+                                    <li class="elements-list-item">icons</li>
+                                    <li class="elements-list-item">lists</li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-bar-item">contact us</li>
+                        </ul> -->
+
+
+
+
+this is the css code for my crappy hover lists 
+
+#home:hover .show-home-list, #shop:hover .show-shop-list, #pages:hover .show-pages-list, #portfolio:hover .show-portfolio-list, #elements:hover .show-elements-list {
+    max-height: inherit;
+    opacity: 1;
+  }
+  .show-home-list, .show-shop-list, .show-pages-list, .show-portfolio-list, .show-elements-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    max-height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 300ms ease;
+  }
+@media (max-width: 576px) {
+    #home:hover .show-home-list, #shop:hover .show-shop-list, #pages:hover .show-pages-list, #portfolio:hover .show-portfolio-list, #elements:hover .show-elements-list {
+        display: none;
+    }
+}

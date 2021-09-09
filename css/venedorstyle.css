@@ -88,6 +88,15 @@ Single-colored icons can be modified like so:
 
 /* list experiment field*/
 
+#dropdownMenu2 {
+    border: 3px solid green;
+    background-color: none;
+}
+.dropdown-button:hover {
+    background-color: var(--tert);
+    transition: 1.5s ease;
+}
+
 #home:hover .show-home-list, #shop:hover .show-shop-list, #pages:hover .show-pages-list, #portfolio:hover .show-portfolio-list, #elements:hover .show-elements-list {
     max-height: inherit;
     opacity: 1;
@@ -105,6 +114,13 @@ Single-colored icons can be modified like so:
     #home:hover .show-home-list, #shop:hover .show-shop-list, #pages:hover .show-pages-list, #portfolio:hover .show-portfolio-list, #elements:hover .show-elements-list {
         display: none;
     }
+}
+
+.show-home-list, .show-shop-list, .show-pages-list, .show-portfolio-list, .show-elements-list {
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 
