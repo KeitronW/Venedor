@@ -246,9 +246,11 @@ Single-colored icons can be modified like so:
 ========================================== */
 
 
-
+**
 i want to make my lists nested. this next bit of code will be for the html. maybe i can make my lists work the way i need them to
 i think i found the code that will work. i will chenge some things around to make sure 
+position fixed with a z index to keep it in place
+**
 
 .show:hover ul.list-categories{
   max-height: inherit;
@@ -361,3 +363,102 @@ this is the css code for my crappy hover lists
         display: none;
     }
 }
+
+***************************************************
+bootstrap main-nav-bar wasn't working correctly....
+
+<!-- <ul class="nav main-nav-dropdown-list">
+                            <li class="nav-dropdown-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-button" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Home
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item" type="button">Home 1</button>
+                                      <button class="dropdown-item" type="button">Home 2</button>
+                                      <button class="dropdown-item" type="button">Home 3</button>
+                                      <button class="dropdown-item" type="button">Home 4</button>
+                                      <button class="dropdown-item" type="button">Home 5</button>
+                                      <button class="dropdown-item" type="button">Home 6</button>
+                                      <button class="dropdown-item" type="button">Home 7</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-dropdown-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Shop
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item" type="button">Clothing</button>
+                                      <button class="dropdown-item" type="button">Shoes</button>
+                                      <button class="dropdown-item" type="button">Accessories</button>
+                                      <button class="dropdown-item" type="button">Sports</button>
+                                      <button class="dropdown-item" type="button">Maternity</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-dropdown-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Pages
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item" type="button">Headers</button>
+                                      <button class="dropdown-item" type="button">Footers</button>
+                                      <button class="dropdown-item" type="button">Product</button>
+                                      <button class="dropdown-item" type="button">Cart</button>
+                                      <button class="dropdown-item" type="button">Category</button>
+                                      <button class="dropdown-item" type="button">Blog</button>
+                                      <button class="dropdown-item" type="button">Checkout</button>
+                                      <button class="dropdown-item" type="button">About us</button>
+                                      <button class="dropdown-item" type="button">Register</button>
+                                      <button class="dropdown-item" type="button">Account</button>
+                                      <button class="dropdown-item" type="button">Compare product</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-dropdown-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Portfolio
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item" type="button">Classic</button>
+                                      <button class="dropdown-item" type="button">Masonry</button>
+                                      <button class="dropdown-item" type="button">Portfolio Posts</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-dropdown-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Elements
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item" type="button">Tabs</button>
+                                      <button class="dropdown-item" type="button">Titles</button>
+                                      <button class="dropdown-item" type="button">Typography</button>
+                                      <button class="dropdown-item" type="button">Collapses</button>
+                                      <button class="dropdown-item" type="button">Animations</button>
+                                      <button class="dropdown-item" type="button">Grid System</button>
+                                      <button class="dropdown-item" type="button">Alert Boxes</button>
+                                      <button class="dropdown-item" type="button">Buttons</button>
+                                      <button class="dropdown-item" type="button">Media</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-dropdown-item">
+                                <div class="dropdown">
+                                    <button class="btn dropdown" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Contact us
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                      <button class="dropdown-item" type="button">Action</button>
+                                      <button class="dropdown-item" type="button">Another action</button>
+                                      <button class="dropdown-item" type="button">Something else here</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
+************************************************************

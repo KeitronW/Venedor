@@ -85,6 +85,10 @@ Single-colored icons can be modified like so:
     color: var(--tert);
     transition: 1s ease;
 }
+.nav-bar-link {
+    text-decoration: none;
+    color: black;
+}
 
 /* list experiment field*/
 
@@ -243,6 +247,10 @@ Single-colored icons can be modified like so:
 }
 .sub-header {
     font-size: calc(12px + 10 * ((100vw - 320px) / 680));
+}
+
+#my-account {
+    padding-top: 25px;
 }
 .my-account-details {
     color: var(--sec);
